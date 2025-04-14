@@ -15,7 +15,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            overflow: hidden; /* Esconde a barra de rolagem durante a animação */
+            overflow: hidden; 
         }
 
         .boas-vindas {
@@ -57,11 +57,10 @@
             const boasVindasDiv = document.querySelector('.boas-vindas');
             boasVindasDiv.classList.add('fade-out');
 
-            // Redirecionar após a animação de fade-out (aproximadamente 1 segundo)
             setTimeout(function() {
-                window.location.href = 'index.html'; // Substitua pelo URL da sua página principal
-            }, 1000); // Tempo da transição CSS
-        }, 5000); // 5000 milissegundos = 5 segundos
+                window.location.href = 'index.html'; 
+            }, 1000); 
+        }, 5000); // 
     </script>
 
 </body>

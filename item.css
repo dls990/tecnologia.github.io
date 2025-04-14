@@ -1,3 +1,57 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bloco {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: calc(50% - 30px); /* Para dois blocos por linha com espaçamento */
+    box-sizing: border-box;
+}
+
+.bloco h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+.bloco p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.linguagens-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.linguagem {
+    background-color: #e9ecef;
+    color: #495057;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+.imagem-bloco {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .bloco {
+        width: 100%; 
+    }
+}
+
 body{
     background-image: url("https://i.gifer.com/J59.gif");
     background-repeat: repeat; 
@@ -83,3 +137,23 @@ button{
     background-color: rgb(55, 155, 255) ;
 }
 
+.Bloco{
+    background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer; 
+            transition: background-color 0.3s ease; 
+            width: 500px; 
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 50px;
+
+}
+
+.menu{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0px;
+}

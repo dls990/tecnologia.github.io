@@ -29,14 +29,18 @@ nav ul li a{
    font-size: 150px;
 }
 
-
+.vendasajuste{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
 
 
 
 .container{
     display: flex;
-    text-align: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     padding: 100px;
 }
 
@@ -51,6 +55,7 @@ nav ul li a{
             width: 500px; 
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
             margin: 50px;
+            
 
 }
 
@@ -83,3 +88,8 @@ button{
     background-color: rgb(55, 155, 255) ;
 }
 
+h1{
+    color: white;
+    text-align: center;
+    font-size: 80px;
+}
