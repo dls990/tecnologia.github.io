@@ -9,6 +9,24 @@
 <body>
     <h1 class="text">Tecnologia</h1>
 
+
+    <div id="relogio"></div>
+
+    <script>
+        function atualizarRelogio() {
+            const agora = new Date();
+            const horas = String(agora.getHours()).padStart(2, '0');
+            const minutos = String(agora.getMinutes()).padStart(2, '0');
+            const segundos = String(agora.getSeconds()).padStart(2, '0');
+            const horaFormatada = `${horas}:${minutos}:${segundos}`;
+            document.getElementById('relogio').textContent = horaFormatada;
+        }
+
+        setInterval(atualizarRelogio, 1000);
+
+        atualizarRelogio();
+    </script>
+
     <section class="container">
         <div class="Bloco" >
             <h3 >Venda</h3>
@@ -18,7 +36,7 @@
         
         <div class="Bloco" >
             <h3>Item</h3>
-          <p>esse bloco vai conter itens explicando cada linguagem de programação</p>
+          <p>esse bloco vai conter itens explicando Front-End e Back-End</p>
           <a href="item.html">Ir para outra pagina</a>
         </div>
     </section>
